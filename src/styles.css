@@ -160,7 +160,7 @@
   background: radial-gradient(circle at 50% 50%, var(--accent-soft) 0 12%, transparent 13%),
     conic-gradient(from 0deg, var(--highlight), var(--foreground), var(--highlight), var(--foreground), var(--highlight));
   clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
-  animation: petal-fall linear infinite;
+  animation: petal-fall linear infinite both;
   filter: drop-shadow(0 2px 3px color-mix(in oklab, var(--background) 60%, transparent));
 }
 

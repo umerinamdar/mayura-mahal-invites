@@ -333,7 +333,7 @@ function Closing() {
 function Petals() {
   const items = Array.from({ length: 22 }, (_, i) => ({
     left: `${(i * 37) % 100}%`,
-    delay: `${(i * 1.3) % 14}s`,
+    delay: `-${(i * 1.3) % 14}s`,
     dur: `${12 + ((i * 7) % 10)}s`,
     drift: `${((i % 5) - 2) * 40}px`,
     scale: 0.6 + ((i * 13) % 10) / 15,
