@@ -136,7 +136,7 @@
 .is-open .curtain--r { transform: translateX(102%) skewY(1deg); filter: brightness(0.6); }
 
 .seal { transition: transform 0.5s var(--ease-velvet), opacity 0.6s ease; }
-.is-open .seal { transform: translate(-50%, -50%) scale(1.25); opacity: 0; }
+.is-open .seal { transform: scale(1.25); opacity: 0; }
 
 .hero-scene { transform: scale(1.12); filter: brightness(0.5) blur(2px); transition: transform 6s cubic-bezier(.2,.6,.2,1), filter 4s ease; }
 .is-open .hero-scene { transform: scale(1); filter: brightness(1) blur(0); }
@@ -147,7 +147,7 @@
 @keyframes shimmer { 0% { background-position: 0% 0; } 100% { background-position: 200% 0; } }
 .shimmer { animation: shimmer 6s linear infinite; }
 
-@keyframes breathe { 0%,100% { transform: translate(-50%,-50%) scale(1); } 50% { transform: translate(-50%,-50%) scale(1.035); } }
+@keyframes breathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.035); } }
 .seal-breathe { animation: breathe 3.2s ease-in-out infinite; }
 
 @keyframes petal-fall {
